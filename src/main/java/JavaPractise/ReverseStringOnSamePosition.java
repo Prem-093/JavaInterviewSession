@@ -7,7 +7,7 @@ public class ReverseStringOnSamePosition {
 
 		String str="Reverse String On its Position";
 		String result="";
-		String[] strarry=str.split("\\s");
+		String strarry[]=str.split("\\s");
 		
 		for(String e:strarry)
 		{
