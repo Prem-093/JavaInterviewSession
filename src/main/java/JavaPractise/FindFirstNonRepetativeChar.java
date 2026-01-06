@@ -12,25 +12,24 @@ public class FindFirstNonRepetativeChar {
 
 		String s="FindFirstNonRepetativeChar";
 		
-		char charr[]=s.toCharArray();
+		char chArr[]=s.toCharArray();
 		
 		int count=1;
-		
 		Map<Character,Integer> map=new LinkedHashMap<Character,Integer>();
 		
-		for(char c:charr)
+		for(char e: chArr)
 		{
-			if(map.containsKey(c)) {
-			
-				map.put(c, count+1);
+			if(map.containsKey(e))
+			{
+				map.put(e, count+1);
 			}
 			else
 			{
-				map.put(c, count);
+				map.put(e, count);
 			}
 		}
 		
-		Iterator<Character> it=	map.keySet().iterator();
+		Iterator<Character> it=map.keySet().iterator();
 		
 		while(it.hasNext())
 		{
@@ -38,7 +37,7 @@ public class FindFirstNonRepetativeChar {
 			
 			if(map.get(key)==1)
 			{
-				System.out.println("Character ="+key+":"+map.get(key));
+				System.out.println("First non repetative key =" +key+":"+map.get(key));
 				break;
 			}
 		}
