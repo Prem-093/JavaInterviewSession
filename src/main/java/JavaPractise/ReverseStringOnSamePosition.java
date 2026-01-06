@@ -6,28 +6,26 @@ public class ReverseStringOnSamePosition {
 		// TODO Auto-generated method stub
 
 		String str="Reverse String On its Position";
-		String result="";
-		String strarry[]=str.split("\\s");
 		
-		for(String e:strarry)
+		String s1[]=str.split("\\s");
+		
+		
+		
+		String Duplicate="";
+		
+		for(String e:s1)
 		{
 			String rev="";
+			
 			int len=e.length();
 			
 			for(int i=len-1; i>=0; i--)
 			{
-				rev=rev+e.charAt(i);
-				
+				rev =rev+ e.charAt(i);
 			}
-			
-			result=result+ rev + " ";
-			
-			
+			Duplicate=Duplicate+rev+" ";
 		}
-		System.out.println(result);
 		
-		
-		
-	}
-
+		System.out.println(Duplicate);
+}
 }
