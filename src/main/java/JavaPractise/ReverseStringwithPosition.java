@@ -7,15 +7,14 @@ public class ReverseStringwithPosition {
 		
 		String s1="Reverse String only with Position";
 		
-	String str[]=	s1.split("\\s");
-	
-int len=str.length;
-	String rev="";
-
-	for (int i=len-1; i>=0; i-- )
-	{
-		rev=rev +str[i] +" ";
-	}
+		String strArr[]=s1.split("");
+		
+		String rev="";
+		
+		for (int i=strArr.length-1; i>=0; i--)
+		{
+			rev=rev + strArr[i];
+		}
 		System.out.println(rev);
 	}
 

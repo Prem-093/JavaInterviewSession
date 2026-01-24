@@ -1,5 +1,6 @@
 package SeleniumPractise;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +17,7 @@ public class FrameHandle {
 		
 		driver.get("https://selectorshub.com/iframe-and-nested-iframe/");
 		By firstCrush=By.xpath("//input[@title='Enter your first crush name']");
-		
+	
 		driver.findElement(firstCrush).sendKeys("Prem");
 		
 		By pact2=By.xpath("//iframe[@id='pact2']");
@@ -44,6 +45,7 @@ public class FrameHandle {
 		
 		driver.findElement(firstCrush).clear();
 		driver.findElement(firstCrush).sendKeys("Nidhi");
+		
 		
 
 	}

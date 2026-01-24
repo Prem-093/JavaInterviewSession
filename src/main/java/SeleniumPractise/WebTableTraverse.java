@@ -79,6 +79,8 @@ public class WebTableTraverse {
 		contactColumn();
 		countryColumn();
 		
+		//System.out.println("companyColumn()+":"+ contactColumn() +":"+countryColumn());
+		
 		
 	}
 

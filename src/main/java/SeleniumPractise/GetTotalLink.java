@@ -21,13 +21,17 @@ public class GetTotalLink {
 		for (WebElement w : allLinks) {
 			String text = w.getText();
 			String hrefText = w.getAttribute("href");
+			
+			System.out.println(hrefText.length());
 
-			if (text.length() > 0) {
-				System.out.println(count + ":" + text + ":" + "AND href::" + hrefText);
-
-			}
-
-			count++;
+			/*
+			 * if (text.length() > 0) { System.out.println(count + ":" + text + ":" +
+			 * "AND href::" + hrefText);
+			 * 
+			 * }
+			 * 
+			 * count++;
+			 */
 		}
 
 		driver.quit();

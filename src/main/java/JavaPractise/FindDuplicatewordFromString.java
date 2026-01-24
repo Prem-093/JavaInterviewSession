@@ -1,3 +1,4 @@
+
 package JavaPractise;
 
 import java.util.HashSet;
@@ -17,7 +18,7 @@ public class FindDuplicatewordFromString {
 		{
 			if(!set.add(s))
 			{
-				System.out.println("Duplicate number"+set+count);
+				System.out.println("Duplicate number :"+s+":"+count);
 				count ++;
 			}
 		}

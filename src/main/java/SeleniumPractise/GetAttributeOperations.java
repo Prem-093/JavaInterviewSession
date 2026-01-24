@@ -24,7 +24,7 @@ public class GetAttributeOperations {
 		
 		By loc=By.xpath("//input[@id='Form_getForm_subdomain']");
 		
-		String placehoderValue=doGetAttribute(loc,"class");
+		String placehoderValue=doGetAttribute(loc,"placeholder");
 		System.out.println(placehoderValue);
 		driver.quit();
 		

@@ -24,11 +24,11 @@ static WebDriver driver;
 		doGetAttribute(loc,"class");
 		//driver" is null
 		//driver.close();
-		driver.quit();
+		driver.quit();//Session id is null
 		doGetAttribute(loc,"class");
 		
 		//session id is null in case of Quit
-		//Session id will get invalid in case of close()
+		
 		
 		
 		
