@@ -1,40 +1,28 @@
 package JavaPractise;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Anagram {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		
-		String s1="Mary";
-		
-		String s2="Army";
-		
-		
-		
-		char[] str1=s1.toLowerCase().toCharArray();
-		
-		char[] str2=s2.toLowerCase().toCharArray();
-		
-	//	System.out.println(str1);
-	//	System.out.println(str2);
-		
+	String s1="Army";
+	String s2="Mary";
 	
-		Arrays.sort(str1);
-		
-		//System.out.println(str1);
+	char[] ch1=s1.toLowerCase().toCharArray();
 	
-		Arrays.sort(str2);
-		
-		//System.out.println(str2);
-		
-		if(Arrays.equals(str1, str2))
-		{
-			System.out.println("Strings are anagram :"+str1 +" : "+ str2 );
-		}
+	char[] ch2=s1.toLowerCase().toCharArray();
 	
+	Arrays.sort(ch1);
+	Arrays.sort(ch2);
+	
+	if(Arrays.equals(ch1, ch2))
+		
+	{
+		System.out.println("String are anagram");
+	}
 
 	}
 

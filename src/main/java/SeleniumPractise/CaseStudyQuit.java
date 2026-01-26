@@ -1,0 +1,38 @@
+package SeleniumPractise;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CaseStudyQuit {
+	
+static WebDriver driver;
+	
+	public static String doGetAttribute(By locator,String value)
+	{
+		return driver.findElement(locator).getAttribute(value);
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.orangehrm.com/30-day-free-trial/");
+		By loc=By.xpath("//input[@id='Form_getForm_subdomain']");
+		doGetAttribute(loc,"class");
+		//driver" is null
+		//driver.close();
+		driver.quit();//Session id is null
+		doGetAttribute(loc,"class");
+		
+		//session id is null in case of Quit
+		
+		
+		
+		
+		
+	}
+
+}
