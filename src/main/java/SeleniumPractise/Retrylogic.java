@@ -27,7 +27,7 @@ public class Retrylogic {
 				e.printStackTrace();
 
 				try {
-					Thread.sleep(500);
+					Thread.sleep(5000);
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

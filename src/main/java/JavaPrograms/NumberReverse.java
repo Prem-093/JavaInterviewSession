@@ -5,7 +5,7 @@ public class NumberReverse {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int num=5467;
+		int num=153;
 		
 		int rev=0;
 		

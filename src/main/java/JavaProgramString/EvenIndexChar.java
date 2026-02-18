@@ -10,6 +10,8 @@ public class EvenIndexChar {
 		char charArr[]=s.toCharArray();
 		
 		
+		
+		
 		for(int i=0;i<=charArr.length-1;i++)
 		{
 			if(i%2==0)

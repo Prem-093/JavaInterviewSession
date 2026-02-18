@@ -16,7 +16,7 @@ public class NavigationBetweenBrowser {
 		driver.navigate().to("https://www.orangehrm.com/30-day-free-trial/");
 		
 		driver.navigate().back();
-				;
+				
 		driver.navigate().forward();
 		Thread.sleep(2000);
 		driver.navigate().refresh();

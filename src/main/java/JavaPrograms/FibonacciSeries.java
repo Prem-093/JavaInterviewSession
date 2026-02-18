@@ -10,6 +10,8 @@ public class FibonacciSeries {
 		
 		for(int i=1; i<=10;i++)
 		{
+			
+			System.out.println(n1);
 			int sum=n1+n2;
 			//i=1//sum=1,n1=0,n2=1
 			//i=2//n1=1,n2=1,sum=2
@@ -23,7 +25,7 @@ public class FibonacciSeries {
 			n1=n2;
 			n2=sum;
 			
-			System.out.println(sum);
+			//System.out.println(sum);
 		}
 
 	}

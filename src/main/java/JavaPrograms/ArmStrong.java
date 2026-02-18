@@ -1,3 +1,4 @@
+
 package JavaPrograms;
 
 public class ArmStrong {
@@ -16,6 +17,16 @@ public class ArmStrong {
 			num=num/10;
 		}
 		System.out.println(sum);
+		System.out.println(num);
+		if( sum==num)
+		   {
+		       System.out.println("number is armstrong");
+		   }
+		   else
+		   {
+		       System.out.println("number is not armstrong");
+		   }
+		   
 
 	}
 
